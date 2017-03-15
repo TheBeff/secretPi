@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import Chat from './components/Chat.jsx'
+
 ReactDOM.render(
-  <h1>secret page</h1>,
+  <Chat />,
   document.getElementById('app')
 )

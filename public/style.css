@@ -1,3 +1,36 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin: 0; }
+
 h1 {
   color: red;
   font-size: 80px; }
+
+form {
+  padding: 0 4rem;
+  display: block;
+  background: pink; }
+
+label {
+  display: block; }
+
+input {
+  display: block; }
+
+#input-message {
+  width: 100%; }
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: solid 1px blue;
+  height: 100%; }
+
+#messages li {
+  padding: 5px 10px; }
+
+#messages li:nth-child(odd) {
+  background: #eee; }
