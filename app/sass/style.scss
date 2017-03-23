@@ -19,17 +19,15 @@ label {
   display: block;
 }
 input {
-  display: block;
+  display: inline;
 }
 #input-message {
   width: 100%;
 }
-
 #messages {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  border: $bord;
   height: 100%;
 }
 #messages li {
@@ -39,3 +37,8 @@ input {
   background: #eee;
 }
 // #messages { margin-bottom: 40px }
+#app {
+  border: $bord;
+  width: 320px;
+  margin: 0 auto;
+}

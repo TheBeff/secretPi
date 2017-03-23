@@ -5,10 +5,8 @@
   "main": "app/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:dev": "webpack-dev-server --port 3000 --inline --content-base public --history-api-fallback",
-    "start:prod": "webpack && node app/server.js",
-    "build": "webpack -w",
+    "start": "nodemon app/server.js",
+    "build": "webpack -w --progress --profile --colors --display-error-details ",
     "build-css": "node-sass -w app/sass -o public/"
   },
   "repository": {
@@ -25,11 +23,11 @@
     "express": "^4.14.1",
     "if-env": "^1.0.0",
     "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0",
-    "socket.io": "^1.7.3",
-    "socket.io-client": "^1.7.3"
+    "socket.io": "^1.7.3"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",
@@ -40,8 +38,7 @@
     "http-server": "^0.8.5",
     "sass-loader": "^5.0.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^1.14.0"
   },
   "homepage": ""
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Chat from './components/Chat.jsx'
+import App from './components/App.jsx'
 
 ReactDOM.render(
-  <Chat />,
+  <App />,
   document.getElementById('app')
 )
