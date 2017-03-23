@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Chat from './Chat'
+import Messages from './Messages'
 import Share from './Share'
 
 export default class App extends React.Component {
@@ -29,7 +29,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Chat
+        <Messages
           messages={this.state.messages}
         />
         <Share
@@ -38,11 +38,7 @@ export default class App extends React.Component {
           handleMessageSubmit = {this.handleMessageSubmit}
         />
         <style jsx>{`
-          .app {
-            border: 2px solid black;
-            width: 320px;
-            margin: 0 auto;
-          }
+
         `}</style>
       </div>
     )

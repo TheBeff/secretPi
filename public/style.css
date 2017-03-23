@@ -8,13 +8,13 @@ h1 {
   color: red;
   font-size: 80px; }
 
-form {
-  padding: 0 4rem;
-  display: block;
-  background: pink; }
-
 label {
   display: block; }
 
 input {
   display: inline; }
+
+#app {
+  border: 2px solid black;
+  width: 320px;
+  margin: 0 auto; }
