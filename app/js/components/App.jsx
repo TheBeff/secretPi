@@ -32,11 +32,18 @@ export default class App extends React.Component {
         <Chat
           messages={this.state.messages}
         />
-      <Share
-        inputValue={this.state.value}
-        handleMessageChange = {this.handleMessageChange}
-        handleMessageSubmit = {this.handleMessageSubmit}
-      />
+        <Share
+          inputValue={this.state.value}
+          handleMessageChange = {this.handleMessageChange}
+          handleMessageSubmit = {this.handleMessageSubmit}
+        />
+        <style jsx>{`
+          .app {
+            border: 2px solid black;
+            width: 320px;
+            margin: 0 auto;
+          }
+        `}</style>
       </div>
     )
   }

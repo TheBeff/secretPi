@@ -19,7 +19,8 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/, exclude: /node_modules/,
-        loader: 'babel-loader?presets[]=es2015&presets[]=react'
+        loader: 'babel-loader?presets[]=es2015&presets[]=react',
+        plugins: ["styled-jsx/babel"]
       },
       {
         test: /\.scss$/,
@@ -28,6 +29,6 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [ '', '.js', '.jsx' ]
+    extensions: [ '', '.js', '.jsx', '.css' ]
   }
 }

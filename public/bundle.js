@@ -19839,7 +19839,12 @@
 	          inputValue: this.state.value,
 	          handleMessageChange: this.handleMessageChange,
 	          handleMessageSubmit: this.handleMessageSubmit
-	        })
+	        }),
+	        _react2.default.createElement(
+	          'style',
+	          { jsx: true },
+	          '\n          .app {\n            border: 2px solid black;\n            width: 320px;\n            margin: 0 auto;\n          }\n        '
+	        )
 	      );
 	    }
 	  }]);
@@ -19900,6 +19905,11 @@
 	              msg
 	            );
 	          })
+	        ),
+	        _react2.default.createElement(
+	          "style",
+	          { jsx: true },
+	          "\n          #messages {\n            list-style-type: none;\n            margin: 0;\n            padding: 0;\n            height: 100%;\n          }\n          #messages li {\n            padding: 5px 10px;\n          }\n          #messages li:nth-child(odd) {\n            background: #eee;\n          }\n        "
 	        )
 	      );
 	    }
@@ -19953,7 +19963,7 @@
 
 	      return _react2.default.createElement(
 	        "div",
-	        null,
+	        { className: "share" },
 	        _react2.default.createElement(
 	          "form",
 	          { onSubmit: handleMessageSubmit },
@@ -19964,6 +19974,11 @@
 	          ),
 	          _react2.default.createElement("input", { id: "input-message", type: "text", name: "message", value: inputValue, onChange: handleMessageChange }),
 	          _react2.default.createElement("input", { type: "submit", value: "share" })
+	        ),
+	        _react2.default.createElement(
+	          "style",
+	          { jsx: true },
+	          "\n          .share {\n            border: 2px solid black;\n            position: fixed;\n            bottom: 0;\n          }\n          #input-message {\n            width: 100%;\n          }\n        "
 	        )
 	      );
 	    }
