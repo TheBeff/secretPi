@@ -12,14 +12,8 @@ export default class Share extends React.Component {
         </form>
         <style jsx>{`
           .share {
-            border: 2px solid black;
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            left: 0;
             width: 320px;
             margin: 0 auto;
-            box-sizing: border-box;
           }
           form {
             padding: 0 4rem;

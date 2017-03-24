@@ -2,6 +2,7 @@ import React from 'react'
 
 import Messages from './Messages'
 import Share from './Share'
+import Navigation from './Navigation'
 
 export default class App extends React.Component {
   constructor() {
@@ -37,9 +38,7 @@ export default class App extends React.Component {
           handleMessageChange = {this.handleMessageChange}
           handleMessageSubmit = {this.handleMessageSubmit}
         />
-        <style jsx>{`
-
-        `}</style>
+        <Navigation />
       </div>
     )
   }
